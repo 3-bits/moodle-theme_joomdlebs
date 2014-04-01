@@ -1,0 +1,93 @@
+/**
+ * JoomdleBS theme
+ *
+ * DO NOT MODIFY THIS THEME!
+ * COPY IT FIRST, THEN RENAME THE COPY AND MODIFY IT INSTEAD.
+ *
+ * For full information about creating Moodle themes, see:
+ * http://docs.moodle.org/dev/Themes_2.0
+ *
+ * Settings CSS file for JoomdleBS theme
+ *
+ * @package   Joomdlebs theme
+ * @copyright 2013 Fernando Acedo, http://3-bits.com
+ * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+
+/* Theme settings */ 
+body {
+    background-color: [[setting:bodybgcolor]];
+}
+
+a {
+    color: [[setting:linkcolor]];
+}
+
+a:hover {
+    color: [[setting:linkhovercolor]];
+    text-decoration: none;
+}
+
+
+
+/* Menu item adjust */
+.block .header .title .commands, 
+.block_adminblock .content, 
+.block .footer, 
+.block .block_tree li>p>a, 
+.block .block_tree li>p>span {
+	display: block;
+	padding: 3px 15px;
+}
+
+
+/* Menu item active background */
+.block_tree li p.tree_item branch,
+.block_tree li p.active_tree_node, 
+.block_tree li p.active_tree_node a, 
+.block_tree li p.active_tree_node:hover,
+.block_tree li p.active_tree_node a:hover { 
+	color: #ffffff;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+	background-color: [[setting:menubgcolor]];
+}
+
+
+/* Remove bullet icon in the course listing */
+
+
+.coursebox>.info>.coursename a,
+.coursebox>.info>.name a {
+	background-image: none;
+	padding-left: 5px;
+}
+
+/* Adjust breadcrumb */
+.breadcrumb {
+
+}
+
+
+/* Adjust Settings menu icon */
+.navicon {
+	display: none;
+}
+
+.block_settings .block_tree .tree_item.branch ,
+.block_navigation .block_tree .tree_item.branch  {
+	background-position: 15px 50%;
+}
+
+.tree_item  a img {
+	display: none;
+}
+
+body {
+	padding-top: 10px;
+}
+
+#page-footer {
+	padding: 0;
+	margin-top: 0;
+	border-top: none;
+}
