@@ -1,11 +1,11 @@
 #Joomdlebs theme#
 
-Joomdlebs is a theme for moodle 2.5 or newer and based in the Boostrap theme created by Bas Brands.
+Joomdlebs is a theme for moodle 2.5, or newer, and based in the Bootstrap theme created by Bas Brands.
 
 ##Theme Credits##
 Fernando Acedo - 3-bits.com
 
-Contact: https://3-bits.org
+Contact: http://3-bits.org/contact
 
 
 ##Description##
@@ -45,3 +45,4 @@ This theme is licensed under the GNU General Public License. (see http://www.gnu
 - 1.0 First release
 - 1.1 Use of bootstrapbase3b as a base theme. You must install bootstrapbase3b in order to use this theme
 - 1.2 Fixed the screenshot and some bugs
+- 1.3 Compatible with moodle version 2.6 and 2.7

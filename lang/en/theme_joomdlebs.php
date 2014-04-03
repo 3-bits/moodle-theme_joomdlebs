@@ -25,7 +25,7 @@
  * English Language strings file for joomdle theme
  *
  * @package   joomdleBS theme
- * @copyright 2013 Fernando Acedo, http://3-bits.com
+ * @copyright 2013-2014 Fernando Acedo, http://3-bits.com
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
@@ -66,7 +66,7 @@ $string['choosereadme'] =
 
 <h3>Theme Credits</h3><p>
 <p>Fernando Acedo - 3-bits.com</p>
-<p>Contact: <a href="http://3-bits.org">http://3-bits.org</a></p>
+<p>Contact: <a href="http://3-bits.org">http://3-bits.org/contact</a></p>
 <br />
 
 <div class="theme_description">
@@ -91,8 +91,8 @@ $string['choosereadme'] =
 
 
 <h3>Updates and Support</h3>
-<p>Visit our site for support<br />
-<a href="http://3-bits.org">http://3-bits.org</a>
+<p>Visit our site for support and tips and tricks<br />
+<a href="http://3-bits.org/forum">http://3-bits.org/forum</a>
 </p>
 <p>Visit our GitHub for latest update<br />
 <a href="https://github.com/3-bits/joomdlebs">https://github.com/3-bits/joomdlebs</a>

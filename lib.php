@@ -26,7 +26,7 @@
  * Lib file for JoomdleBS theme
  *
  * @package   Joomdlebs theme
- * @copyright 2013 Fernando Acedo, http://3-bits.com
+ * @copyright 2013-2014 Fernando Acedo, http://3-bits.com
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
