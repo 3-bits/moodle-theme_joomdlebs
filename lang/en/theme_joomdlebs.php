@@ -65,15 +65,15 @@ $string['choosereadme'] =
 <img src="joomdlebs/pix/screenshot.png" />
 
 <h3>Theme Credits</h3><p>
-<p>Fernando Acedo - 3-bits.com</p>
-<p>Contact: <a href="http://3-bits.org">http://3-bits.org/contact</a></p>
+<p>Fernando Acedo - <a href="http://3-bits.com">(3bits)</a></p>
+<p>Contact: <a href="http://3-bits.org/contact">http://3-bits.org/contact</a></p>
 <br />
 
 <div class="theme_description">
 <h3>Description</h3>
-<p>This theme is created to be used in <a href="http://joomdle.com">Joomdle<a/> sites only. Some parts like the header, footer and login link have been removed deliberately. It is based in the Bootstrap theme created for moodle by Bas Brand 
+<p>Joomdlebs is a theme for moodle 2.6 or newer and based in the Bootstrap theme created by Bas Brands.This theme is created to be used with <a href="http://joomdle.com">Joomdle<a/> sites only. Some parts like the header, footer and login link have been removed deliberately.
 
-<strong>DO NOT USE IN MOODLE STAND ALONE INSTALLATIONS.</strong> 
+<strong>IMPORTANT: DO NOT USE IN MOODLE STAND ALONE INSTALLATIONS.</strong> 
 </p>
 <br />
 
@@ -85,7 +85,7 @@ $string['choosereadme'] =
 
 <h3>Report a bug</h3>
 <p>To report issues or bugs:<br />
-<a href="https://github.com/3-bits/joomdlebs/issues">https://github.com/3-bits/joomdlebs/issues</a>
+<a href="https://github.com/3-bits/joomdlebs/issues">https://github.com/3-bits/theme-joomdlebs/issues</a>
 </p>
 <br />
 

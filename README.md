@@ -1,6 +1,5 @@
 #Joomdlebs theme#
-
-Joomdlebs is a theme for moodle 2.5, or newer, and based in the Bootstrap theme created by Bas Brands.
+Joomdlebs is a theme for moodle 2.6, or newer, and based in the Bootstrap theme created by Bas Brands.
 
 ##Theme Credits##
 Fernando Acedo - 3-bits.com
@@ -9,8 +8,9 @@ Contact: http://3-bits.org/contact
 
 
 ##Description##
-This theme is created to be used in Joomdle sites only (http://joomdle.com ). Some parts like the header, footer and login link have been removed deliberately. 
+This theme is created to be used in Joomdle sites only (http://joomdle.com). Some parts like the header, footer and login link have been removed deliberately. 
 
+*IMPORTANT*
 *DO NOT USE IN MOODLE STAND ALONE INSTALLATIONS*
 
 
@@ -20,7 +20,7 @@ You can change the main colors from the backend: site background, links, links h
 
 ##Report a bug##
 To report issues or bugs:
-https://github.com/3-bits/joomdlebs/issues
+https://github.com/3-bits/theme-joomdlebs/issues
 
 
 ##Updates and Support##
@@ -28,7 +28,7 @@ Visit our site for support and tips & tricks
 http://3-bits.org/forum
 
 Visit our GitHub for the latest update
-https://github.com/3-bits/joomdlebs
+https://github.com/3-bits/theme-joomdlebs
 
 
 ##Tweaks##
@@ -42,7 +42,9 @@ This theme is licensed under the GNU General Public License. (see http://www.gnu
 
 ##Changelog##
 
-- 1.0 First release
+- 1.0 First release for moodle version 2.5
 - 1.1 Use of bootstrapbase3b as a base theme. You must install bootstrapbase3b in order to use this theme
 - 1.2 Fixed the screenshot and some bugs
-- 1.3 Compatible with moodle version 2.6 and 2.7
+- 1.3 Compatible with moodle version 2.6 and 2.7. Bootstrapbase3b dependency removed.
+- 1.4 Compatible with moodle version 2.8
+- 1.5 Compatible with moodle version 2.9. Little improvements in the code. Spanish translation added
