@@ -85,7 +85,7 @@ $string['choosereadme'] =
 
 <h3>Report a bug</h3>
 <p>To report issues or bugs:<br />
-<a href="https://github.com/3-bits/joomdlebs/issues">https://github.com/3-bits/theme-joomdlebs/issues</a>
+<a href="https://github.com/3-bits/moodle-theme_joomdlebs/issues">https://github.com/3-bits/moodle-theme_joomdlebs/issues</a>
 </p>
 <br />
 
@@ -95,7 +95,7 @@ $string['choosereadme'] =
 <a href="http://3-bits.org/forum">http://3-bits.org/forum</a>
 </p>
 <p>Visit our GitHub for latest update<br />
-<a href="https://github.com/3-bits/joomdlebs">https://github.com/3-bits/joomdlebs</a>
+<a href="https://github.com/3-bits/moodle-theme_joomdlebs">https://github.com/3-bits/moodle-theme_joomdlebs</a>
 </p>
 
 <br />

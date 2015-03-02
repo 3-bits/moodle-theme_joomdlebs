@@ -20,7 +20,7 @@ You can change the main colors from the backend: site background, links, links h
 
 ##Report a bug##
 To report issues or bugs:
-https://github.com/3-bits/theme-joomdlebs/issues
+https://github.com/3-bits/moodle-theme_joomdlebs/issues
 
 
 ##Updates and Support##
@@ -28,7 +28,7 @@ Visit our site for support and tips & tricks
 http://3-bits.org/forum
 
 Visit our GitHub for the latest update
-https://github.com/3-bits/theme-joomdlebs
+https://github.com/3-bits/moodle-theme_joomdlebs
 
 
 ##Tweaks##

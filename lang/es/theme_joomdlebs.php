@@ -85,7 +85,7 @@ $string['choosereadme'] =
 
 <h3>Informar de errores</h3>
 <p>Para informar de errores:<br />
-<a href="https://github.com/3-bits/joomdlebs/issues">https://github.com/3-bits/theme-joomdlebs/issues</a>
+<a href="https://github.com/3-bits/moodle-theme_joomdlebs/issues">https://github.com/3-bits/moodle-theme_joomdlebs/issues</a>
 </p>
 <br />
 
@@ -95,7 +95,7 @@ $string['choosereadme'] =
 <a href="http://3-bits.org/forum">http://3-bits.org/forum</a>
 </p>
 <p>O visita nuestro GitHub para descargar la última actualización<br />
-<a href="https://github.com/3-bits/joomdlebs">https://github.com/3-bits/theme-joomdlebs</a>
+<a href="https://github.com/3-bits/moodle-theme_joomdlebs">https://github.com/3-bits/moodle-theme_joomdlebs</a>
 </p>
 
 <br />
