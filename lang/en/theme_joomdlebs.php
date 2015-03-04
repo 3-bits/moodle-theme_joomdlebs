@@ -29,17 +29,15 @@
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
- 
- 
 $string['configtitle'] = 'joomdlebs';
 $string['pluginname'] = 'Joomdle Bootstrap';
 
-// Settings page
+// Settings page.
 
 $string['region-side-post'] = 'Right';
 $string['region-side-pre'] = 'Left';
 $string['purgecaches'] = 'Purge caches';
-$string['notes'] =  'Joomdle Configuration page';
+$string['notes'] = 'Joomdle Configuration page';
 $string['notesdesc'] = 'Configure your theme';
 $string['customcss'] = 'Custom CSS';
 $string['customcssdesc'] = 'Add your extra CSS in this box, use it to customize your theme with a little css';
@@ -57,16 +55,9 @@ $string['menubgcolordesc'] = 'Menu background color';
 
 
 
-// Theme info
-$string['choosereadme'] = 
-'<div class="clearfix"></div>
-<div class="theme_screenshot">
-<h2>joomdle bootstrap</h2>
-<img src="joomdlebs/pix/screenshot.png" />
-
-<h3>Theme Credits</h3><p>
-<p>Fernando Acedo - <a href="http://3-bits.com">(3bits)</a></p>
-<p>Contact: <a href="http://3-bits.org/contact">http://3-bits.org/contact</a></p>
+// Theme info.
+$string['choosereadme'] = '<div class="clearfix"></div><div class="theme_screenshot"><h2>joomdle bootstrap</h2><img src="joomdlebs/pix/screenshot.png" />
+<h3>Theme Credits</h3><p><p>Fernando Acedo - <a href="http://3-bits.com">(3bits)</a></p><p>Contact: <a href="http://3-bits.org/contact">http://3-bits.org/contact</a></p>
 <br />
 
 <div class="theme_description">
@@ -99,7 +90,6 @@ $string['choosereadme'] =
 </p>
 
 <br />
-
 
 <h3>Tweaks</h3>
 <p>If you want to modify this theme, we recommend that you first duplicate it and then rename it before making your changes. 

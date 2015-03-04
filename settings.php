@@ -30,62 +30,50 @@
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
- 
 defined('MOODLE_INTERNAL') || die;
 
 if ($ADMIN->fulltree) {
-    
-
-
-//Body background
+    // Body background.
     $name = 'theme_joomdlebs/bodybgcolor';
-    $title = get_string('bodybgcolor','theme_joomdlebs');
+    $title = get_string('bodybgcolor', 'theme_joomdlebs');
     $description = get_string('bodybgcolordesc', 'theme_joomdlebs');
     $default = '#fdfdfd';
-    $previewconfig = NULL;
+    $previewconfig = null;
     $setting = new admin_setting_configcolourpicker($name, $title, $description, $default, $previewconfig);
     $settings->add($setting);
 
-//Link color
+    // Link color.
     $name = 'theme_joomdlebs/linkcolor';
-    $title = get_string('linkcolor','theme_joomdlebs');
+    $title = get_string('linkcolor', 'theme_joomdlebs');
     $description = get_string('linkcolordesc', 'theme_joomdlebs');
     $default = '#0066cc';
-    $previewconfig = NULL;
+    $previewconfig = null;
     $setting = new admin_setting_configcolourpicker($name, $title, $description, $default, $previewconfig);
     $settings->add($setting);
 
-//Link Hover color
+    // Link Hover color.
     $name = 'theme_joomdlebs/linkhovercolor';
-    $title = get_string('linkhovercolor','theme_joomdlebs');
+    $title = get_string('linkhovercolor', 'theme_joomdlebs');
     $description = get_string('linkhovercolordesc', 'theme_joomdlebs');
     $default = '#00cccc';
-    $previewconfig = NULL;
+    $previewconfig = null;
     $setting = new admin_setting_configcolourpicker($name, $title, $description, $default, $previewconfig);
     $settings->add($setting);
-
     
-//Menu background color
+    // Menu background color.
     $name = 'theme_joomdlebs/menubgcolor';
-    $title = get_string('menubgcolor','theme_joomdlebs');
+    $title = get_string('menubgcolor', 'theme_joomdlebs');
     $description = get_string('menubgcolordesc', 'theme_joomdlebs');
     $default = '#0066cc';
-    $previewconfig = NULL;
+    $previewconfig = null;
     $setting = new admin_setting_configcolourpicker($name, $title, $description, $default, $previewconfig);
     $settings->add($setting);
-
     
-    
-// Custom CSS   
-	$name = 'theme_joomdlebs/customcss';
-	$title = get_string('customcss','theme_joomdlebs');
-	$description = get_string('customcssdesc', 'theme_joomdlebs');
-	$default = '';
-	$setting = new admin_setting_configtextarea($name, $title, $description, $default);
-	$settings->add($setting);
-
-    
-
-
+    // Custom CSS.
+    $name = 'theme_joomdlebs/customcss';
+    $title = get_string('customcss', 'theme_joomdlebs');
+    $description = get_string('customcssdesc', 'theme_joomdlebs');
+    $default = '';
+    $setting = new admin_setting_configtextarea($name, $title, $description, $default);
+    $settings->add($setting);
 }
-

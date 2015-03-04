@@ -30,19 +30,21 @@
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
+/**
+* Process CSS
+**/
 
 function joomdlebs_process_css($css, $theme) {
-  
-    // Set body background color 
+
+    // Set body background color.
     if (!empty($theme->settings->bodybgcolor)) {
         $bodybgcolor = $theme->settings->bodybgcolor;
     } else {
         $bodybgcolor = null;
     }
     $css = joomdlebs_set_bodybgcolor($css, $bodybgcolor);
-
     
-    // Set link color 
+    // Set link color.
     if (!empty($theme->settings->linkcolor)) {
         $linkcolor = $theme->settings->linkcolor;
     } else {
@@ -50,16 +52,15 @@ function joomdlebs_process_css($css, $theme) {
     }
     $css = joomdlebs_set_linkcolor($css, $linkcolor);
 
-    // Set link hover colour 
+    // Set link hover colour.
     if (!empty($theme->settings->linkcolor)) {
         $linkcolor = $theme->settings->linkcolor;
     } else {
         $linkcolor = null;
     }
     $css = joomdlebs_set_linkcolor($css, $linkcolor);
-
     
-    // Set link hover color 
+    // Set link hover color.
     if (!empty($theme->settings->linkhovercolor)) {
         $linkhovercolor = $theme->settings->linkhovercolor;
     } else {
@@ -67,8 +68,7 @@ function joomdlebs_process_css($css, $theme) {
     }
     $css = joomdlebs_set_linkhovercolor($css, $linkhovercolor);
 
-
-    // Set menu background color 
+    // Set menu background color.
     if (!empty($theme->settings->menubgcolor)) {
         $menubgcolor = $theme->settings->menubgcolor;
     } else {
@@ -76,8 +76,7 @@ function joomdlebs_process_css($css, $theme) {
     }
     $css = joomdlebs_set_menubgcolor($css, $menubgcolor);
     
-
-    // Set Custom CSS 
+    // Set Custom CSS.
     if (!empty($theme->settings->customcss)) {
         $customcss = $theme->settings->customcss;
     } else {
@@ -88,6 +87,9 @@ function joomdlebs_process_css($css, $theme) {
     return $css;
 }
 
+/**
+* Process CSS
+**/
 
 function joomdlebs_set_bodybgcolor($css, $bodybgcolor) {
     $tag = '[[setting:bodybgcolor]]';
@@ -95,11 +97,19 @@ function joomdlebs_set_bodybgcolor($css, $bodybgcolor) {
     return $css;
 }
 
+/**
+* Process CSS
+**/
+
 function joomdlebs_set_linkcolor($css, $linkcolor) {
     $tag = '[[setting:linkcolor]]';
     $css = str_replace($tag, $linkcolor, $css);
     return $css;
 }
+
+/**
+* Process CSS
+**/
 
 function joomdlebs_set_linkhovercolor($css, $linkhovercolor) {
     $tag = '[[setting:linkhovercolor]]';
@@ -107,12 +117,19 @@ function joomdlebs_set_linkhovercolor($css, $linkhovercolor) {
     return $css;
 }
 
+/**
+* Process CSS
+**/
+
 function joomdlebs_set_menubgcolor($css, $menubgcolor) {
     $tag = '[[setting:menubgcolor]]';
     $css = str_replace($tag, $menubgcolor, $css);
     return $css;
 }
 
+/**
+* Process CSS
+**/
 
 function joomdlebs_set_customcss($css, $customcss) {
     $tag = '[[setting:customcss]]';
@@ -126,8 +143,10 @@ function joomdlebs_set_customcss($css, $customcss) {
     return $css;
 }
 
+/**
+* Load JQuery and plugins libraries.
+**/
 
-// Load JQuery and plugins libraries
 function theme_joomdle_page_init(moodle_page $page) {
     $page->requires->jquery();
 }

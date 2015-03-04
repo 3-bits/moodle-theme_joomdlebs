@@ -34,12 +34,12 @@ $string['configtitle'] = 'joomdlebs';
 $string['pluginname'] = 'Joomdle Bootstrap';
 
 
-// Settings page
+// Settings page.
 
 $string['region-side-post'] = 'Derecha';
 $string['region-side-pre'] = 'Izquierda';
 $string['purgecaches'] = 'Purgar cachés';
-$string['notes'] =  'Configuración de Joomdle';
+$string['notes'] = 'Configuración de Joomdle';
 $string['notesdesc'] = 'Configura tu tema';
 $string['customcss'] = 'CSS personalizado';
 $string['customcssdesc'] = 'Añade tu código CSS personalizado en este campo. Usalo para personalizar tu tema con algo de CSS';
@@ -56,7 +56,7 @@ $string['menubgcolordesc'] = 'Color del menu seleccionado';
 
 
 
-// Theme info
+// Theme info.
 
 $string['choosereadme'] = 
 '<div class="clearfix"></div>

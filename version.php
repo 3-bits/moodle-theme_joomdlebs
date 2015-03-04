@@ -31,11 +31,9 @@
 
 defined('MOODLE_INTERNAL') || die;
 
-$plugin->version   = 2015022415;
-$plugin->release   = 'v1.5';
-$plugin->requires  = 2013111800;
+$plugin->version = 2015022415;
+$plugin->release = 'v1.5';
+$plugin->requires = 2013111800;
 $plugin->component = 'theme_joomdlebs';
-$plugin->dependencies = array(
-    'theme_bootstrapbase'  => 2013110500,  
-);
-$plugin->maturity = MATURITY_STABLE; // Ready for production sites
+$plugin->dependencies = array('theme_bootstrapbase' => 2013110500);
+$plugin->maturity = MATURITY_STABLE;

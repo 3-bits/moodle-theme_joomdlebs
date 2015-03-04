@@ -31,36 +31,13 @@
  */
 
 $THEME->name = 'joomdlebs';
-
-/////////////////////////////////
-// The only thing you need to change in this file when copying it to
-// create a new theme is the name above. You also need to change the name
-// in version.php and lang/en/theme_bootmood.php as well.
-//////////////////////////////////
-//
 $THEME->doctype = 'html5';
 $THEME->parents = array('bootstrapbase');
-$THEME->sheets = array(
-    'login', 
-    'settings',
-    'custom'
-);
-
+$THEME->sheets = array('login', 'settings', 'custom');
 $THEME->supportscssoptimisation = false;
 $THEME->yuicssmodules = array();
-
 $THEME->editor_sheets = array();
-
-$THEME->plugins_exclude_sheets = array(
-    'block' => array(
-        'html'
-    ),
-    'gradereport' => array(
-        'grader',
-    ),
-);
-
-
+$THEME->plugins_exclude_sheets = array('block' => array('html'), 'gradereport' => array('grader'),);
 $THEME->layouts = array(
     // Most backwards compatible layout without the blocks - this is the layout used by default.
     'base' => array(
@@ -85,7 +62,7 @@ $THEME->layouts = array(
         'regions' => array('side-pre', 'side-post'),
         'defaultregion' => 'side-pre',
     ),
-    // part of course, typical for modules - default page layout if $cm specified in require_login().
+    // Part of course, typical for modules - default page layout if $cm specified in require_login().
     'incourse' => array(
         'file' => 'general.php',
         'regions' => array('side-pre', 'side-post'),
@@ -120,20 +97,20 @@ $THEME->layouts = array(
     'login' => array(
         'file' => 'general.php',
         'regions' => array(),
-        'options' => array('langmenu'=>true),
+        'options' => array('langmenu'=> true),
     ),
 
     // Pages that appear in pop-up windows - no navigation, no blocks, no header.
     'popup' => array(
         'file' => 'general.php',
         'regions' => array(),
-        'options' => array('nofooter'=>true, 'nonavbar'=>true),
+        'options' => array('nofooter'=> true, 'nonavbar'=> true),
     ),
     // No blocks and minimal footer - used for legacy frame layouts only!
     'frametop' => array(
         'file' => 'general.php',
         'regions' => array(),
-        'options' => array('nofooter'=>true, 'nocoursefooter'=>true),
+        'options' => array('nofooter'=> true, 'nocoursefooter'=> true),
     ),
     // Embeded pages, like iframe/object embeded in moodleform - it needs as much space as possible.
     'embedded' => array(
@@ -173,14 +150,7 @@ $THEME->layouts = array(
 );
 
 
-$THEME->javascripts = array(
-    'bootstrapengine',
-    'moodlebootstrap',
-    'bootstrapcollapse',
-    'bootstrapdropdown',
-    'headercollapse'
-);
-
+$THEME->javascripts = array('bootstrapengine', 'moodlebootstrap', 'bootstrapcollapse', 'bootstrapdropdown', 'headercollapse');
 $THEME->rendererfactory = 'theme_overridden_renderer_factory';
 $THEME->csspostprocess = 'joomdlebs_process_css';
 
