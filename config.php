@@ -37,7 +37,7 @@ $THEME->sheets = array('login', 'settings', 'custom');
 $THEME->supportscssoptimisation = false;
 $THEME->yuicssmodules = array();
 $THEME->editor_sheets = array();
-$THEME->plugins_exclude_sheets = array('block' => array('html'), 'gradereport' => array('grader'),);
+$THEME->plugins_exclude_sheets = array('block' => array('html'), 'gradereport' => array('grader'));
 $THEME->layouts = array(
     // Most backwards compatible layout without the blocks - this is the layout used by default.
     'base' => array(
@@ -55,7 +55,7 @@ $THEME->layouts = array(
         'file' => 'general.php',
         'regions' => array('side-pre', 'side-post'),
         'defaultregion' => 'side-pre',
-        'options' => array('langmenu'=>true),
+        'options' => array('langmenu' => true),
     ),
     'coursecategory' => array(
         'file' => 'general.php',
@@ -73,7 +73,7 @@ $THEME->layouts = array(
         'file' => 'general.php',
         'regions' => array('side-pre', 'side-post'),
         'defaultregion' => 'side-pre',
-        'options' => array('nonavbar'=>true),
+        'options' => array('nonavbar' => true),
     ),
     // Server administration scripts.
     'admin' => array(
@@ -86,7 +86,7 @@ $THEME->layouts = array(
         'file' => 'general.php',
         'regions' => array('side-pre', 'side-post'),
         'defaultregion' => 'side-pre',
-        'options' => array('langmenu'=>true),
+        'options' => array('langmenu' => true),
     ),
     // My public page.
     'mypublic' => array(
@@ -97,20 +97,20 @@ $THEME->layouts = array(
     'login' => array(
         'file' => 'general.php',
         'regions' => array(),
-        'options' => array('langmenu'=> true),
+        'options' => array('langmenu' => true),
     ),
 
     // Pages that appear in pop-up windows - no navigation, no blocks, no header.
     'popup' => array(
         'file' => 'general.php',
         'regions' => array(),
-        'options' => array('nofooter'=> true, 'nonavbar'=> true),
+        'options' => array('nofooter' => true, 'nonavbar' => true),
     ),
     // No blocks and minimal footer - used for legacy frame layouts only!
     'frametop' => array(
         'file' => 'general.php',
         'regions' => array(),
-        'options' => array('nofooter'=> true, 'nocoursefooter'=> true),
+        'options' => array('nofooter' => true, 'nocoursefooter' => true),
     ),
     // Embeded pages, like iframe/object embeded in moodleform - it needs as much space as possible.
     'embedded' => array(
@@ -128,7 +128,7 @@ $THEME->layouts = array(
     'print' => array(
         'file' => 'general.php',
         'regions' => array(),
-        'options' => array('nofooter'=>true, 'nonavbar'=>false),
+        'options' => array('nofooter' => true, 'nonavbar' => false),
     ),
     // The pagelayout used when a redirection is occuring.
     'redirect' => array(

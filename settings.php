@@ -59,7 +59,7 @@ if ($ADMIN->fulltree) {
     $previewconfig = null;
     $setting = new admin_setting_configcolourpicker($name, $title, $description, $default, $previewconfig);
     $settings->add($setting);
-    
+
     // Menu background color.
     $name = 'theme_joomdlebs/menubgcolor';
     $title = get_string('menubgcolor', 'theme_joomdlebs');
@@ -68,7 +68,7 @@ if ($ADMIN->fulltree) {
     $previewconfig = null;
     $setting = new admin_setting_configcolourpicker($name, $title, $description, $default, $previewconfig);
     $settings->add($setting);
-    
+
     // Custom CSS.
     $name = 'theme_joomdlebs/customcss';
     $title = get_string('customcss', 'theme_joomdlebs');

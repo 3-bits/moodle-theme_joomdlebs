@@ -31,8 +31,8 @@
  */
 
 /**
-* Process CSS
-**/
+ * Process CSS
+ **/
 
 function joomdlebs_process_css($css, $theme) {
 
@@ -43,7 +43,7 @@ function joomdlebs_process_css($css, $theme) {
         $bodybgcolor = null;
     }
     $css = joomdlebs_set_bodybgcolor($css, $bodybgcolor);
-    
+
     // Set link color.
     if (!empty($theme->settings->linkcolor)) {
         $linkcolor = $theme->settings->linkcolor;
@@ -59,7 +59,7 @@ function joomdlebs_process_css($css, $theme) {
         $linkcolor = null;
     }
     $css = joomdlebs_set_linkcolor($css, $linkcolor);
-    
+
     // Set link hover color.
     if (!empty($theme->settings->linkhovercolor)) {
         $linkhovercolor = $theme->settings->linkhovercolor;
@@ -75,7 +75,7 @@ function joomdlebs_process_css($css, $theme) {
         $menubgcolor = null;
     }
     $css = joomdlebs_set_menubgcolor($css, $menubgcolor);
-    
+
     // Set Custom CSS.
     if (!empty($theme->settings->customcss)) {
         $customcss = $theme->settings->customcss;
@@ -83,13 +83,13 @@ function joomdlebs_process_css($css, $theme) {
         $customcss = null;
     }
     $css = joomdlebs_set_customcss($css, $customcss);
-    
+
     return $css;
 }
 
 /**
-* Process CSS
-**/
+ * Set Body BG Color
+ **/
 
 function joomdlebs_set_bodybgcolor($css, $bodybgcolor) {
     $tag = '[[setting:bodybgcolor]]';
@@ -98,8 +98,8 @@ function joomdlebs_set_bodybgcolor($css, $bodybgcolor) {
 }
 
 /**
-* Process CSS
-**/
+ * Set Link Color
+ **/
 
 function joomdlebs_set_linkcolor($css, $linkcolor) {
     $tag = '[[setting:linkcolor]]';
@@ -108,8 +108,8 @@ function joomdlebs_set_linkcolor($css, $linkcolor) {
 }
 
 /**
-* Process CSS
-**/
+ * Set Link Hover Color
+ **/
 
 function joomdlebs_set_linkhovercolor($css, $linkhovercolor) {
     $tag = '[[setting:linkhovercolor]]';
@@ -118,8 +118,8 @@ function joomdlebs_set_linkhovercolor($css, $linkhovercolor) {
 }
 
 /**
-* Process CSS
-**/
+ * Set Menu BG Color
+ **/
 
 function joomdlebs_set_menubgcolor($css, $menubgcolor) {
     $tag = '[[setting:menubgcolor]]';
@@ -128,8 +128,8 @@ function joomdlebs_set_menubgcolor($css, $menubgcolor) {
 }
 
 /**
-* Process CSS
-**/
+ * Set Custom CSS
+ **/
 
 function joomdlebs_set_customcss($css, $customcss) {
     $tag = '[[setting:customcss]]';
@@ -144,8 +144,8 @@ function joomdlebs_set_customcss($css, $customcss) {
 }
 
 /**
-* Load JQuery and plugins libraries.
-**/
+ * Load JQuery and plugins libraries.
+ **/
 
 function theme_joomdle_page_init(moodle_page $page) {
     $page->requires->jquery();
