@@ -17,24 +17,30 @@
 /* Theme settings */
 
 
-/* Site background color */
+/* Site background color and Main font */
 body {
-    background-color: [[setting:bodybgcolor]];
+  background-color: [[setting:bodybgcolor]];
+  font-family: [[setting:fontname]], sans-serif !important;
 }
 
 
 /* Links color */
 a {
-    color: [[setting:linkcolor]];
+  color: [[setting:linkcolor]];
 }
 
 
 /* Link Hover color */
 a:hover {
-    color: [[setting:linkhovercolor]];
-    text-decoration: none;
+  color: [[setting:linkhovercolor]];
+  text-decoration: none;
 }
 
+
+/* Blocks header font */
+.block .header h2  {
+  font-family: [[setting:fontheadername]], sans-serif;
+}
 
 /* Menu item adjust */
 .block .header .title .commands,
@@ -83,11 +89,17 @@ a:hover {
 
 /* Main adjusts for a better display without header and footer*/
 body {
-	padding-top: 10px;
+	padding-top: [[setting:topmargin]];
 }
 
 #page-footer {
 	padding: 0;
 	margin-top: 0;
 	border-top: none;
+}
+
+/* frontpage full width */
+.empty-region-side-pre.empty-region-side-post #region-main-box,
+.empty-region-side-pre.empty-region-side-post #region-main {
+    width: 100%;
 }

@@ -47,4 +47,6 @@ This theme is licensed under the GNU General Public License. (see http://www.gnu
 - 1.2 Fixed the screenshot and some bugs
 - 1.3 Compatible with moodle version 2.6 and 2.7. Bootstrapbase3b dependency removed.
 - 1.4 Compatible with moodle version 2.8
-- 1.5 Compatible with moodle version 2.9. Little improvements in the code. Spanish translation added
+- 1.5 Compatible with moodle version 2.9. Little improvements in the code. Added Spanish translation.
+- 1.6 Add your own main and header fonts. Iframe top margin setting. Langmenu removed in some pages. Other bugs fixed.
+

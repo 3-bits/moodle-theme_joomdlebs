@@ -69,6 +69,33 @@ if ($ADMIN->fulltree) {
     $setting = new admin_setting_configcolourpicker($name, $title, $description, $default, $previewconfig);
     $settings->add($setting);
 
+    // Main Font Name.
+    $name = 'theme_joomdlebs/fontname';
+    $title = get_string('fontname', 'theme_joomdlebs');
+    $description = get_string('fontnamedesc', 'theme_joomdlebs');
+    $default = '';
+    $setting = new admin_setting_configtext($name, $title, $description, $default);
+    $setting->set_updatedcallback('theme_reset_all_caches');
+    $settings->add($setting);
+
+    // Header Font Name.
+    $name = 'theme_joomdlebs/fontheadername';
+    $title = get_string('fontheadername', 'theme_joomdlebs');
+    $description = get_string('fontheadernamedesc', 'theme_joomdlebs');
+    $default = '';
+    $setting = new admin_setting_configtext($name, $title, $description, $default);
+    $setting->set_updatedcallback('theme_reset_all_caches');
+    $settings->add($setting);
+
+    // Top Margin.
+    $name = 'theme_joomdlebs/topmargin';
+    $title = get_string('topmargin', 'theme_joomdlebs');
+    $description = get_string('topmargindesc', 'theme_joomdlebs');
+    $default = '0';
+    $setting = new admin_setting_configtext($name, $title, $description, $default);
+    $setting->set_updatedcallback('theme_reset_all_caches');
+    $settings->add($setting);
+
     // Custom CSS.
     $name = 'theme_joomdlebs/customcss';
     $title = get_string('customcss', 'theme_joomdlebs');

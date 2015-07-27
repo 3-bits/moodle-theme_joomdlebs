@@ -48,6 +48,9 @@ $hascustommenu = (empty($PAGE->layout_options['nocustommenu']) && !empty($custom
 
 $courseheader = $coursecontentheader = $coursecontentfooter = $coursefooter = '';
 
+$fontname = str_replace(" ", "+", $PAGE->theme->settings->fontname);
+$fontheadername = str_replace(" ", "+", $PAGE->theme->settings->fontheadername);
+
 if (empty($PAGE->layout_options['nocourseheaderfooter'])) {
     $courseheader = $OUTPUT->course_header();
     $coursecontentheader = $OUTPUT->course_content_header();
@@ -81,6 +84,15 @@ echo $OUTPUT->doctype() ?>
 <head>
     <title><?php echo $PAGE->title ?></title>
     <link rel="shortcut icon" href="<?php echo $OUTPUT->pix_url('favicon', 'theme')?>" />
+
+    <?php if (!empty($fontname)) { ?>
+        <link href='http://fonts.googleapis.com/css?family=<?php echo $fontname; ?>' rel='stylesheet' type='text/css'><?php 
+} ?>
+
+    <?php if (!empty($fontheadername)) { ?>
+        <link href='http://fonts.googleapis.com/css?family=<?php echo $fontheadername; ?>' rel='stylesheet' type='text/css'><?php 
+} ?>
+
     <?php echo $OUTPUT->standard_head_html() ?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -94,7 +106,7 @@ echo $OUTPUT->doctype() ?>
         <nav class="breadcrumb-button"><?php echo $PAGE->button; ?></nav>
         <?php echo $OUTPUT->navbar();
 } else { ?>
-        <div style="height: 20px;"><?php 
+        <div style="height: 20px;"><?php
 } ?>
 
         <div id="page-content" class="row-fluid">

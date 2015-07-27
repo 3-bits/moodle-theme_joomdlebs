@@ -25,7 +25,7 @@
  * English Language strings file for joomdle theme
  *
  * @package   joomdleBS theme
- * @copyright 2013-2014 Fernando Acedo, http://3-bits.com
+ * @copyright 2013-2015 Fernando Acedo, http://3-bits.com
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
@@ -53,25 +53,33 @@ $string['linkcolordesc'] = 'Link color';
 $string['linkhovercolordesc'] = 'Link hover color';
 $string['menubgcolordesc'] = 'Menu background color';
 
+$string['fontname'] = 'Main font';
+$string['fontnamedesc'] = 'Main Google Font used in the Joomla template. Empty to use the default font.';
+$string['fontheadername'] = 'Headers font';
+$string['fontheadernamedesc'] = 'Headers Google Font used in the Joomla template. Empty to use the default font.';
+
+$string['topmargin'] = 'Top margin';
+$string['topmargindesc'] = 'Top margin of the moodle iframe in the Joomla template. Use pixels or percentages values e.g. 10px or 5%';
 
 
 // Theme info.
 $string['choosereadme'] = '<div class="clearfix"></div><div class="theme_screenshot"><h2>joomdle bootstrap</h2><img src="joomdlebs/pix/screenshot.png" />
 <h3>Theme Credits</h3><p><p>Fernando Acedo - <a href="http://3-bits.com">(3bits)</a></p><p>Contact: <a href="http://3-bits.org/contact">http://3-bits.org/contact</a></p>
 <br/><div class="theme_description"><h3>Description</h3><p>Joomdlebs is a theme for moodle 2.6 or newer and based in the Bootstrap theme created by Bas Brands.This theme is created to be used with <a href="http://joomdle.com">Joomdle<a/> sites only. Some parts like the header, footer and login link have been removed deliberately.
-<strong>IMPORTANT: DO NOT USE IN MOODLE STAND ALONE INSTALLATIONS.</strong>
+<br/><br/>
+<strong><span style="background-color: #7CFC00;">IMPORTANT: DO NOT USE IN MOODLE STAND ALONE INSTALLATIONS.</span></strong>
 </p><br/>
 <h3>Settings</h3>
 <p>You can change the main colors from the backend: site background, links, links hover and menu background.
 </p>
 <br/>
 <h3>Report a bug</h3>
-<p>To report issues or bugs:<br />
+<p>To report issues or bugs:<br/>
 <a href="https://github.com/3-bits/moodle-theme_joomdlebs/issues">https://github.com/3-bits/moodle-theme_joomdlebs/issues</a>
 </p>
 <br/>
 <h3>Updates and Support</h3>
-<p>Visit our site for support and tips and tricks<br />
+<p>Visit our website for support and tips<br />
 <a href="http://3-bits.org/forum">http://3-bits.org/forum</a>
 </p>
 <p>Visit our GitHub for latest update<br />

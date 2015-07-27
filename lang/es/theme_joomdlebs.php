@@ -54,6 +54,13 @@ $string['linkcolordesc'] = 'Color para los enlaces';
 $string['linkhovercolordesc'] = 'Color para los enlaces con el cursos encima';
 $string['menubgcolordesc'] = 'Color del menu seleccionado';
 
+$string['fontname'] = 'Fuente principal';
+$string['fontnamedesc'] = 'Google font usada como principal  en la plantilla de Joomla.';
+$string['fontheadername'] = 'Fuente para los bloques';
+$string['fontheadernamesdesc'] = 'Google font usada en la cabecera de los bloques.';
+
+$string['topmargin'] = 'Margen superior';
+$string['topmargindesc'] = 'Margen superior del iFrame de moodle en la plantilla de Joomla. Usar valor en pixels o porcentaje (ejemplo: 10px o 5%)';
 
 
 // Theme info.
@@ -63,13 +70,15 @@ $string['choosereadme'] = '<div class="clearfix"></div>
 <h2>joomdle bootstrap</h2>
 <img src="joomdlebs/pix/screenshot.png" />
 <h3>Theme Credits</h3><p>
-<p>Fernando Acedo - <a href="http://3-bits.com">(3bits)</a></p>
+<p>Fernando Acedo - <a href="http://3-bits.com"> (3bits)</a></p>
 <p>Contact: <a href="http://3-bits.org/contact">http://3-bits.org/contact</a></p>
 <br/>
 <div class="theme_description">
 <h3>Description</h3>
 <p>Joomdlebs es un tema para moodle 2.6 o posterior y basado en el tema Bootstrap por Bas Brands. Este tema está creado para ser usado con sitios creados con <a href="http://joomdle.com">Joomdle<a/> unicamente. Algunas partes como la cabecera, el pie y el enlace para entrar han sido eliminados intencionadamente.<p>
-<strong>IMPORTANTE: NO USAR EN INSTALACIONES QUE SOLO UTILICEN MOODLE</strong></p>
+<br/><br/>
+<strong><span style="background-color: #7CFC00;">IMPORTANTE: NO USAR EN INSTALACIONES QUE SOLO UTILICEN MOODLE</span></strong>
+<strong></strong></p>
 <br/>
 <h3>Configuración</h3>
 <p>Puedes cambiar los colores principales: fondo, enlaces, hover de los enlaces y menu seleccionado.</p>
@@ -80,7 +89,7 @@ $string['choosereadme'] = '<div class="clearfix"></div>
 <a href="https://github.com/3-bits/moodle-theme_joomdlebs/issues">https://github.com/3-bits/moodle-theme_joomdlebs/issues</a></p>
 <br/>
 <h3>Actualizaciones y soporte</h3>
-<p>Visita nuestar web para actualizaciones y soporte
+<p>Visita nuestra web para actualizaciones y soporte
 <br/>
 <a href="http://3-bits.org/forum">http://3-bits.org/forum</a></p>
 <p>O visita nuestro GitHub para descargar la última actualización
@@ -88,7 +97,7 @@ $string['choosereadme'] = '<div class="clearfix"></div>
 <a href="https://github.com/3-bits/moodle-theme_joomdlebs">https://github.com/3-bits/moodle-theme_joomdlebs</a></p>
 <br/>
 <h3>Cambios</h3>
-<p>Si quieres modificar este tema, te recomendamos duplicarlo y renombrarlo antes de hacer cambios.
+<p>Si quieres modificar este tema, te recomendamos duplicarlo y renombrarlo antes de modificarlo.
 De esta manera, las futuras actualizaciones no sobrescribirán tus cambios y tendrás los archivos originales en caso de que tenga problemas tu copia.</p>
 <br/>
 <h3>Licencia</h3>

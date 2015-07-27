@@ -26,7 +26,7 @@
  * Lib file for JoomdleBS theme
  *
  * @package   Joomdlebs theme
- * @copyright 2013-2014 Fernando Acedo, http://3-bits.com
+ * @copyright 2013-2015 Fernando Acedo, http://3-bits.com
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
@@ -76,6 +76,30 @@ function joomdlebs_process_css($css, $theme) {
     }
     $css = joomdlebs_set_menubgcolor($css, $menubgcolor);
 
+    // Set main font.
+    if (!empty($theme->settings->fontname)) {
+        $fontname = $theme->settings->fontname;
+    } else {
+        $fontname = null;
+    }
+    $css = joomdlebs_set_fontname($css, $fontname);
+
+    // Set block headers name.
+    if (!empty($theme->settings->fontheadername)) {
+        $fontheadername = $theme->settings->fontheadername;
+    } else {
+        $fontheadername = null;
+    }
+    $css = joomdlebs_set_fontheadername($css, $fontheadername);
+
+    // Set top margin.
+    if (!empty($theme->settings->topmargin)) {
+        $topmargin = $theme->settings->topmargin;
+    } else {
+        $topmargin = null;
+    }
+    $css = joomdlebs_set_topmargin($css, $topmargin);
+
     // Set Custom CSS.
     if (!empty($theme->settings->customcss)) {
         $customcss = $theme->settings->customcss;
@@ -124,6 +148,39 @@ function joomdlebs_set_linkhovercolor($css, $linkhovercolor) {
 function joomdlebs_set_menubgcolor($css, $menubgcolor) {
     $tag = '[[setting:menubgcolor]]';
     $css = str_replace($tag, $menubgcolor, $css);
+    return $css;
+}
+
+
+/**
+ * Set Main Font
+ **/
+
+function joomdlebs_set_fontname($css, $fontname) {
+    $tag = '[[setting:fontname]]';
+    $css = str_replace($tag, $fontname, $css);
+    return $css;
+}
+
+
+/**
+ * Set Header Font
+ **/
+
+function joomdlebs_set_fontheadername($css, $fontheadername) {
+    $tag = '[[setting:fontheadername]]';
+    $css = str_replace($tag, $fontheadername, $css);
+    return $css;
+}
+
+
+/**
+ * Set top Margin
+ **/
+
+function joomdlebs_set_topmargin($css, $topmargin) {
+    $tag = '[[setting:topmargin]]';
+    $css = str_replace($tag, $topmargin, $css);
     return $css;
 }
 
