@@ -25,14 +25,14 @@
  *
  * @package    theme
  * @subpackage joomdlebs
- * @copyright  2013-2015 Fernando Acedo 3-bits.com
+ * @copyright  2013-2016 Fernando Acedo 3-bits.com
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die;
 
-$plugin->version = 2015072516;
-$plugin->release = 'v1.6';
+$plugin->version = 2016020900;
+$plugin->release = 'v1.7';
 $plugin->requires = 2013111800;
 $plugin->component = 'theme_joomdlebs';
 $plugin->dependencies = array('theme_bootstrapbase' => 2013110500);

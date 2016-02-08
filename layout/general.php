@@ -26,7 +26,7 @@
  * Layout file for Joomdlebs theme
  *
  * @package   Joomdlebs theme
- * @copyright 2013-2015 Fernando Acedo, http://3-bits.com
+ * @copyright 2013-2016 Fernando Acedo, http://3-bits.com
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
@@ -48,9 +48,35 @@ $hascustommenu = (empty($PAGE->layout_options['nocustommenu']) && !empty($custom
 
 $courseheader = $coursecontentheader = $coursecontentfooter = $coursefooter = '';
 
+
+// Get the Google Fonts name.
 $fontname = str_replace(" ", "+", $PAGE->theme->settings->fontname);
 $fontheadername = str_replace(" ", "+", $PAGE->theme->settings->fontheadername);
 
+
+// Get the Google Fonts subset.
+if (!empty($PAGE->theme->settings->fontsubset)) {
+    $fontssubset = '&subset=latin,'.$PAGE->theme->settings->fontsubset;
+} else {
+    $fontssubset = '';
+}
+
+
+// Set the font weights.
+if (!empty($PAGE->theme->settings->fontweight)) {
+    $fontweight = ':'.$PAGE->theme->settings->fontweight;
+} else {
+    $fontweight = ':400';
+}
+
+if (!empty($PAGE->theme->settings->fontheaderweight)) {
+    $fontheaderweight = ':'.$PAGE->theme->settings->fontheaderweight;
+} else {
+    $fontheaderweight = ':400';
+}
+
+
+// Layout.
 if (empty($PAGE->layout_options['nocourseheaderfooter'])) {
     $courseheader = $OUTPUT->course_header();
     $coursecontentheader = $OUTPUT->course_content_header();
@@ -85,13 +111,25 @@ echo $OUTPUT->doctype() ?>
     <title><?php echo $PAGE->title ?></title>
     <link rel="shortcut icon" href="<?php echo $OUTPUT->pix_url('favicon', 'theme')?>" />
 
-    <?php if (!empty($fontname)) { ?>
-        <link href='http://fonts.googleapis.com/css?family=<?php echo $fontname; ?>' rel='stylesheet' type='text/css'><?php 
-} ?>
+    <?php
+if (!empty($fontname) && $fontname != 'default') {
+    ?>
+        <link href='https://fonts.googleapis.com/css?family=<?php echo $fontname.$fontweight.$fontssubset; ?>'
+        rel='stylesheet'
+        type='text/css'>
+    <?php
+}
+    ?>
 
-    <?php if (!empty($fontheadername)) { ?>
-        <link href='http://fonts.googleapis.com/css?family=<?php echo $fontheadername; ?>' rel='stylesheet' type='text/css'><?php 
-} ?>
+    <?php
+if (!empty($fontheadername) && $fontheadername != 'default') {
+    ?>
+        <link href='https://fonts.googleapis.com/css?family=<?php echo $fontheadername.$fontheaderweight.$fontssubset; ?>'
+        rel='stylesheet'
+        type='text/css'>
+    <?php
+}
+    ?>
 
     <?php echo $OUTPUT->standard_head_html() ?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">

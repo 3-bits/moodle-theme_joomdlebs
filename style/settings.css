@@ -10,37 +10,57 @@
  * Settings CSS file for JoomdleBS theme
  *
  * @package   Joomdlebs theme
- * @copyright 2013-2015 Fernando Acedo, http://3-bits.com
+ * @copyright 2013-2016 Fernando Acedo, http://3-bits.com
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
+
 /* Theme settings */
-
-
-/* Site background color and Main font */
 body {
-  background-color: [[setting:bodybgcolor]];
-  font-family: [[setting:fontname]], sans-serif !important;
+    background-color: [[setting:bodybgcolor]];
+    color: [[setting:fontcolor]];
+    font-family: [[setting:fontname]], sans-serif !important;
+    font-weight: [[setting:fontweight]] !important;
+	padding-top: [[setting:topmargin]] !important;
+}
+
+/* Headers */
+h1, h2, h3, h4, h5, h6 {
+    font-family: [[setting:fontheadername]], sans-serif !important;
+    font-weight: [[setting:fontheaderweight]] !important;
+    color: [[setting:fontheadercolor]] !important;
 }
 
 
 /* Links color */
 a {
-  color: [[setting:linkcolor]];
+    color: [[setting:linkcolor]];
 }
 
 
-/* Link Hover color */
+/* Links Hover color */
 a:hover {
-  color: [[setting:linkhovercolor]];
-  text-decoration: none;
+    color: [[setting:linkhovercolor]];
+    text-decoration: none;
 }
 
+
+/* Blocks */
 
 /* Blocks header font */
 .block .header h2  {
-  font-family: [[setting:fontheadername]], sans-serif;
+    font-family: [[setting:fontheadername]], sans-serif !important;
+    font-weight: [[setting:fontheaderweight]] !important;
+    color: [[setting:fontheadercolor]] !important;
 }
+
+/* block styles */
+.block {
+    background-color: [[setting:blockbackgroundcolor]] !important;
+    border: [[setting:blockbordersize]] solid [[setting:blockbordercolor]] !important;
+    border-radius: [[setting:blockborderradius]] !important;
+}
+
 
 /* Menu item adjust */
 .block .header .title .commands,
@@ -55,12 +75,19 @@ a:hover {
 
 /* Menu item active background */
 .block_tree li p.tree_item branch,
-.block_tree li p.active_tree_node,
-.block_tree li p.active_tree_node a,
 .block_tree li p.active_tree_node:hover,
 .block_tree li p.active_tree_node a:hover {
-	color: #ffffff;
-	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+    color: [[setting:menutextcolor]];
+    text-decoration: none;
+	text-shadow:none;
+	background-color: none;
+}
+
+.block_tree li p.tree_item branch,
+.block_tree li p.active_tree_node,
+.block_tree li p.active_tree_node a {
+    color: [[setting:menutextcolor]];
+	text-shadow:none;
 	background-color: [[setting:menubgcolor]];
 }
 
@@ -84,12 +111,6 @@ a:hover {
 
 .tree_item  a img {
 	display: none;
-}
-
-
-/* Main adjusts for a better display without header and footer*/
-body {
-	padding-top: [[setting:topmargin]];
 }
 
 #page-footer {

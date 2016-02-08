@@ -26,7 +26,7 @@
  * Lib file for JoomdleBS theme
  *
  * @package   Joomdlebs theme
- * @copyright 2013-2015 Fernando Acedo, http://3-bits.com
+ * @copyright 2013-2016 Fernando Acedo, http://3-bits.com
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
@@ -76,6 +76,46 @@ function joomdlebs_process_css($css, $theme) {
     }
     $css = joomdlebs_set_menubgcolor($css, $menubgcolor);
 
+    // Set menu text color.
+    if (!empty($theme->settings->menutextcolor)) {
+        $menutextcolor = $theme->settings->menutextcolor;
+    } else {
+        $menutextcolor = null;
+    }
+    $css = joomdlebs_set_menutextcolor($css, $menutextcolor);
+
+    // Set block background color.
+    if (!empty($theme->settings->blockbackgroundcolor)) {
+        $blockbackgroundcolor = $theme->settings->blockbackgroundcolor;
+    } else {
+        $blockbackgroundcolor = null;
+    }
+    $css = joomdlebs_set_blockbackgroundcolor($css, $blockbackgroundcolor);
+
+    // Set block border color.
+    if (!empty($theme->settings->blockbordercolor)) {
+        $blockbordercolor = $theme->settings->blockbordercolor;
+    } else {
+        $blockbordercolor = null;
+    }
+    $css = joomdlebs_set_blockbordercolor($css, $blockbordercolor);
+
+    // Set block border size.
+    if (!empty($theme->settings->blockbordersize)) {
+        $blockbordersize = $theme->settings->blockbordersize;
+    } else {
+        $blockbordersize = null;
+    }
+    $css = joomdlebs_set_blockbordersize($css, $blockbordersize);
+
+    // Set block border radius.
+    if (!empty($theme->settings->blockborderradius)) {
+        $blockborderradius = $theme->settings->blockborderradius;
+    } else {
+        $blockborderradius = null;
+    }
+    $css = joomdlebs_set_blockborderradius($css, $blockborderradius);
+
     // Set main font.
     if (!empty($theme->settings->fontname)) {
         $fontname = $theme->settings->fontname;
@@ -84,13 +124,45 @@ function joomdlebs_process_css($css, $theme) {
     }
     $css = joomdlebs_set_fontname($css, $fontname);
 
-    // Set block headers name.
+    // Set main font weight.
+    if (!empty($theme->settings->fontweight)) {
+        $fontweight = $theme->settings->fontweight;
+    } else {
+        $fontweight = null;
+    }
+    $css = joomdlebs_set_fontweight($css, $fontweight);
+
+    // Set main font color.
+    if (!empty($theme->settings->fontcolor)) {
+        $fontcolor = $theme->settings->fontcolor;
+    } else {
+        $fontcolor = null;
+    }
+    $css = joomdlebs_set_fontcolor($css, $fontcolor);
+
+    // Set header font name.
     if (!empty($theme->settings->fontheadername)) {
         $fontheadername = $theme->settings->fontheadername;
     } else {
         $fontheadername = null;
     }
     $css = joomdlebs_set_fontheadername($css, $fontheadername);
+
+    // Set header font weight.
+    if (!empty($theme->settings->fontheaderweight)) {
+        $fontheaderweight = $theme->settings->fontheaderweight;
+    } else {
+        $fontheaderweight = null;
+    }
+    $css = joomdlebs_set_fontheaderweight($css, $fontheaderweight);
+
+    // Set header font color.
+    if (!empty($theme->settings->fontheadercolor)) {
+        $fontheadercolor = $theme->settings->fontheadercolor;
+    } else {
+        $fontheadercolor = null;
+    }
+    $css = joomdlebs_set_fontheadercolor($css, $fontheadercolor);
 
     // Set top margin.
     if (!empty($theme->settings->topmargin)) {
@@ -110,6 +182,7 @@ function joomdlebs_process_css($css, $theme) {
 
     return $css;
 }
+
 
 /**
  * Set Body BG Color
@@ -153,6 +226,17 @@ function joomdlebs_set_menubgcolor($css, $menubgcolor) {
 
 
 /**
+ * Set Menu BG Color
+ **/
+
+function joomdlebs_set_menutextcolor($css, $menutextcolor) {
+    $tag = '[[setting:menutextcolor]]';
+    $css = str_replace($tag, $menutextcolor, $css);
+    return $css;
+}
+
+
+/**
  * Set Main Font
  **/
 
@@ -164,12 +248,99 @@ function joomdlebs_set_fontname($css, $fontname) {
 
 
 /**
+ * Set Main Font Weight
+ **/
+
+function joomdlebs_set_fontweight($css, $fontweight) {
+    $tag = '[[setting:fontweight]]';
+    $css = str_replace($tag, $fontweight, $css);
+    return $css;
+}
+
+
+/**
+ * Set Main Font Color
+ **/
+
+function joomdlebs_set_fontcolor($css, $fontcolor) {
+    $tag = '[[setting:fontcolor]]';
+    $css = str_replace($tag, $fontcolor, $css);
+    return $css;
+}
+
+
+/**
  * Set Header Font
  **/
 
 function joomdlebs_set_fontheadername($css, $fontheadername) {
     $tag = '[[setting:fontheadername]]';
     $css = str_replace($tag, $fontheadername, $css);
+    return $css;
+}
+
+
+/**
+ * Set Header Font Weight
+ **/
+
+function joomdlebs_set_fontheaderweight($css, $fontheaderweight) {
+    $tag = '[[setting:fontheaderweight]]';
+    $css = str_replace($tag, $fontheaderweight, $css);
+    return $css;
+}
+
+
+/**
+ * Set Header Font Color
+ **/
+
+function joomdlebs_set_fontheadercolor($css, $fontheadercolor) {
+    $tag = '[[setting:fontheadercolor]]';
+    $css = str_replace($tag, $fontheadercolor, $css);
+    return $css;
+}
+
+
+
+
+/**
+ * Set Block Background Color
+ **/
+
+function joomdlebs_set_blockbackgroundcolor($css, $blockbackgroundcolor) {
+    $tag = '[[setting:blockbackgroundcolor]]';
+    $css = str_replace($tag, $blockbackgroundcolor, $css);
+    return $css;
+}
+
+/**
+ * Set Block Border Color
+ **/
+
+function joomdlebs_set_blockbordercolor($css, $blockbordercolor) {
+    $tag = '[[setting:blockbordercolor]]';
+    $css = str_replace($tag, $blockbordercolor, $css);
+    return $css;
+}
+
+/**
+ * Set Block Border Size
+ **/
+
+function joomdlebs_set_blockbordersize($css, $blockbordersize) {
+    $tag = '[[setting:blockbordersize]]';
+    $css = str_replace($tag, $blockbordersize, $css);
+    return $css;
+}
+
+/**
+ * Set Block Border Radius
+ **/
+
+function joomdlebs_set_blockborderradius($css, $blockborderradius) {
+    $tag = '[[setting:blockborderradius]]';
+    $css = str_replace($tag, $blockborderradius, $css);
     return $css;
 }
 
