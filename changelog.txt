@@ -1,4 +1,5 @@
 v1.7
 --------------------------------------
 - new Google Font selector for headings and main font
+- Settings for blocks borders
 
