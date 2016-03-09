@@ -45,6 +45,11 @@ a:hover {
 }
 
 
+/* Buttons */
+input, button, select, textarea {
+    font-family: [[setting:fontheadername]], sans-serif !important;
+}
+
 /* Blocks */
 
 /* Blocks header font */
@@ -55,7 +60,8 @@ a:hover {
 }
 
 /* block styles */
-.block {
+.block,
+.course-content {
     background-color: [[setting:blockbackgroundcolor]] !important;
     border: [[setting:blockbordersize]] solid [[setting:blockbordercolor]] !important;
     border-radius: [[setting:blockborderradius]] !important;
