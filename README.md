@@ -1,5 +1,5 @@
 #Joomdlebs theme#
-Joomdlebs is a theme for moodle 2.8 or newer, and based in Bootstrapbase theme.
+Joomdlebs is a theme for moodle 2.9 or newer, and based in Bootstrapbase theme.
 
 ##Theme Credits##
 Fernando Acedo - 3-bits.com
@@ -15,7 +15,7 @@ This theme is created to be used in Joomdle sites only (http://joomdle.com). Som
 
 
 ##Settings##
-You can change the main colors from the backend: site background, links, links hover and menu background. The Google Fonts dropdowns allow the admin to select any Google Font to be applied to the content and the headers.
+You can change the main colors from the backend: site background, links, links hover and menu background. The Google Fonts dropdowns allow the admin to select any Google Font to be applied to the content and the headers. You can add also your custom CSS code. 
 
 
 ##Report a bug##
