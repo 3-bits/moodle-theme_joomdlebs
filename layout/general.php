@@ -111,27 +111,27 @@ echo $OUTPUT->doctype() ?>
     <title><?php echo $PAGE->title ?></title>
     <link rel="shortcut icon" href="<?php echo $OUTPUT->pix_url('favicon', 'theme')?>" />
 
-    <?php
+<?php
 if (!empty($fontname) && $fontname != 'default') {
-    ?>
+?>
         <link href='https://fonts.googleapis.com/css?family=<?php echo $fontname.$fontweight.$fontssubset; ?>'
         rel='stylesheet'
         type='text/css'>
-    <?php
+<?php
 }
-    ?>
+?>
 
-    <?php
+<?php
 if (!empty($fontheadername) && $fontheadername != 'default') {
-    ?>
-        <link href='https://fonts.googleapis.com/css?family=<?php echo $fontheadername.$fontheaderweight.$fontssubset; ?>'
-        rel='stylesheet'
-        type='text/css'>
-    <?php
+?>
+    <link href='https://fonts.googleapis.com/css?family=<?php echo $fontheadername.$fontheaderweight.$fontssubset; ?>'
+    rel='stylesheet'
+    type='text/css'>
+<?php
 }
-    ?>
+?>
 
-    <?php echo $OUTPUT->standard_head_html() ?>
+<?php echo $OUTPUT->standard_head_html() ?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -149,7 +149,7 @@ if (!empty($fontheadername) && $fontheadername != 'default') {
 
         <div id="page-content" class="row-fluid">
 
-       <?php if ($layout === 'pre-and-post') { ?>
+        <?php if ($layout === 'pre-and-post') { ?>
             <div id="region-bs-main-and-pre" class="span9">
             <div class="row-fluid">
             <section id="region-bs-main" class="span8 pull-right">
@@ -175,8 +175,8 @@ if (!empty($fontheadername) && $fontheadername != 'default') {
 
         <?php if ($layout !== 'content-only') {
     if ($layout === 'pre-and-post') { ?>
-                <aside id="region-pre" class="span4 block-region desktop-first-column region-content">
-        <?php
+        <aside id="region-pre" class="span4 block-region desktop-first-column region-content">
+    <?php
     } else if ($layout === 'side-pre-only') { ?>
         <aside id="region-pre" class="span3 block-region desktop-first-column region-content">
     <?php
@@ -201,7 +201,7 @@ if (!empty($fontheadername) && $fontheadername != 'default') {
     }
 
     if ($layout === 'side-post-only' OR $layout === 'pre-and-post') { ?>
-    <aside id="region-post" class="span3 block-region region-content">
+        <aside id="region-post" class="span3 block-region region-content">
 <?php
         if (!right_to_left()) {
             echo $OUTPUT->blocks_for_region('side-post');
