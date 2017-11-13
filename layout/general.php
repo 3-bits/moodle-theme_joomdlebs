@@ -30,6 +30,7 @@
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
+defined('MOODLE_INTERNAL') || die();
 
 $hasheading = ($PAGE->heading);
 $hasnavbar = (empty($PAGE->layout_options['nonavbar']) && $PAGE->has_navbar());
@@ -141,7 +142,7 @@ if (!empty($fontheadername) && $fontheadername != 'default') {
 
 <div id="page" class="container-fluid">
     <div style="height: 30px; width: 100%;">
-<?php 
+<?php
     // Add messages / notifications (moodle 3.2 or higher).
 if ($CFG->version > 2016120400) {
     echo $OUTPUT->navbar_plugin_output();
@@ -182,44 +183,44 @@ if ($CFG->version > 2016120400) {
         </section>
 
         <?php if ($layout !== 'content-only') {
-    if ($layout === 'pre-and-post') { ?>
-        <aside id="region-pre" class="span4 block-region desktop-first-column region-content">
+            if ($layout === 'pre-and-post') { ?>
+                <aside id="region-pre" class="span4 block-region desktop-first-column region-content">
     <?php
-    } else if ($layout === 'side-pre-only') { ?>
-        <aside id="region-pre" class="span3 block-region desktop-first-column region-content">
+            } else if ($layout === 'side-pre-only') { ?>
+                <aside id="region-pre" class="span3 block-region desktop-first-column region-content">
     <?php
-    }
+            }
     ?>
 
 <?php
-    if (!right_to_left()) {
-        echo $OUTPUT->blocks_for_region('side-pre');
-    } else if ($hassidepost) {
-        echo $OUTPUT->blocks_for_region('side-post');
-    }
+if (!right_to_left()) {
+    echo $OUTPUT->blocks_for_region('side-pre');
+} else if ($hassidepost) {
+    echo $OUTPUT->blocks_for_region('side-post');
+}
 ?>
     </aside>
 <?php
-    if ($layout === 'pre-and-post') {
+if ($layout === 'pre-and-post') {
 ?>
     </div>
 </div>
 
 <?php
-    }
+}
 
-    if ($layout === 'side-post-only' OR $layout === 'pre-and-post') { ?>
+if ($layout === 'side-post-only' OR $layout === 'pre-and-post') { ?>
         <aside id="region-post" class="span3 block-region region-content">
 <?php
-        if (!right_to_left()) {
-            echo $OUTPUT->blocks_for_region('side-post');
-        } else {
-            echo $OUTPUT->blocks_for_region('side-pre');
-        }
+if (!right_to_left()) {
+    echo $OUTPUT->blocks_for_region('side-post');
+} else {
+    echo $OUTPUT->blocks_for_region('side-pre');
+}
 ?>
     </aside>
 <?php
-    }
+}
 }
 ?>
 

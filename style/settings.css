@@ -10,7 +10,7 @@
  * Settings CSS file for JoomdleBS theme
  *
  * @package   Joomdlebs theme
- * @copyright 2013-2016 Fernando Acedo, http://3-bits.com
+ * @copyright 2013-2017 Fernando Acedo, http://3-bits.com
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
@@ -21,7 +21,7 @@ body {
     color: [[setting:fontcolor]];
     font-family: [[setting:fontname]], sans-serif !important;
     font-weight: [[setting:fontweight]] !important;
-	padding-top: [[setting:topmargin]] !important;
+    padding-top: [[setting:topmargin]] !important;
 }
 
 /* Headers */
@@ -74,8 +74,8 @@ input, button, select, textarea {
 .block .footer,
 .block .block_tree li>p>a,
 .block .block_tree li>p>span {
-	display: block;
-	padding: 3px 15px;
+    display: block;
+    padding: 3px 15px;
 }
 
 
@@ -85,44 +85,44 @@ input, button, select, textarea {
 .block_tree li p.active_tree_node a:hover {
     color: [[setting:menutextcolor]];
     text-decoration: none;
-	text-shadow:none;
-	background-color: none;
+    text-shadow: none;
+    background-color: none;
 }
 
 .block_tree li p.tree_item branch,
 .block_tree li p.active_tree_node,
 .block_tree li p.active_tree_node a {
     color: [[setting:menutextcolor]];
-	text-shadow:none;
-	background-color: [[setting:menubgcolor]];
+    text-shadow: none;
+    background-color: [[setting:menubgcolor]];
 }
 
 
 /* Remove bullet icon in the course listing */
 .coursebox>.info>.coursename a,
 .coursebox>.info>.name a {
-	background-image: none;
-	padding-left: 5px;
+    background-image: none;
+    padding-left: 5px;
 }
 
 /* Adjust Settings menu icon */
 .navicon {
-	display: none;
+    display: none;
 }
 
 .block_settings .block_tree .tree_item.branch ,
 .block_navigation .block_tree .tree_item.branch  {
-	background-position: 15px 50%;
+    background-position: 15px 50%;
 }
 
 .tree_item  a img {
-	display: none;
+    display: none;
 }
 
 #page-footer {
-	padding: 0;
-	margin-top: 0;
-	border-top: none;
+    padding: 0;
+    margin-top: 0;
+    border-top: none;
 }
 
 /* frontpage full width */
@@ -146,4 +146,3 @@ input, button, select, textarea {
     z-index: 100;
     box-shadow: 5px 5px 15px 1px #000;
 }
-

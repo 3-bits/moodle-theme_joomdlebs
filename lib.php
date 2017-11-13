@@ -34,8 +34,9 @@
  * Process CSS
  **/
 
-function joomdlebs_process_css($css, $theme) {
+defined('MOODLE_INTERNAL') || die();
 
+function joomdlebs_process_css($css, $theme) {
     // Set body background color.
     if (!empty($theme->settings->bodybgcolor)) {
         $bodybgcolor = $theme->settings->bodybgcolor;
