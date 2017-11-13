@@ -50,4 +50,5 @@ Google Fonts licensed under several licenses. See https://www.google.com/fonts/a
 - 1.5 Compatible with moodle version 2.9. Little improvements in the code. Added Spanish translation.
 - 1.6 Add your own main and header fonts. Iframe top margin setting. Langmenu removed in some pages. Other bugs fixed.
 - 1.7 Google font selection. Blocks customization. Several minor bugs fixed.
+- 1.8 Notifications bar added to the top
 
