@@ -130,3 +130,20 @@ input, button, select, textarea {
 .empty-region-side-pre.empty-region-side-post #region-main {
     width: 100%;
 }
+
+/* Messages / Notifications dropdown */
+.popover-region-container {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    height: 500px;
+    opacity: 1;
+    position: absolute;
+    right: 0;
+    top: 30px;
+    transition: height 0.25s ease 0s;
+    visibility: visible;
+    width: 300px;
+    z-index: 100;
+    box-shadow: 5px 5px 15px 1px #000;
+}
+

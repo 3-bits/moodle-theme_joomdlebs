@@ -137,9 +137,17 @@ if (!empty($fontheadername) && $fontheadername != 'default') {
 
 <body id="<?php p($PAGE->bodyid) ?>" class="<?php p($PAGE->bodyclasses.' '.join($bodyclasses)) ?>">
 
-<?php echo $OUTPUT->standard_top_of_body_html() ?>
+<?php echo $OUTPUT->standard_top_of_body_html(); ?>
 
 <div id="page" class="container-fluid">
+    <div style="height: 30px; width: 100%;">
+<?php 
+    // Add messages / notifications (moodle 3.2 or higher).
+if ($CFG->version > 2016120400) {
+    echo $OUTPUT->navbar_plugin_output();
+} ?>
+    </div>
+
     <?php if ($hasnavbar) { ?>
         <nav class="breadcrumb-button"><?php echo $PAGE->button; ?></nav>
         <?php echo $OUTPUT->navbar();
