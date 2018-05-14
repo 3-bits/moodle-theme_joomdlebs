@@ -1,0 +1,5 @@
+v1.7
+------------------------------------------------------------
+- New Google Font selector for headings and main body font
+- Blocks borders settings
+- Minor code improvements

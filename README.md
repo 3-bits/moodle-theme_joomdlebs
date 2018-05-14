@@ -40,8 +40,8 @@ This will prevent your customized theme from being overwritten by future upgrade
 This theme is licensed under the GNU General Public License. See http://www.gnu.org/licenses/gpl.html
 Google Fonts licensed under several licenses. See https://www.google.com/fonts/attribution
 
-##Changelog##
 
+##Changelog##
 - 1.0 First release for moodle version 2.5
 - 1.1 Use of bootstrapbase3b as a base theme. You must install bootstrapbase3b in order to use this theme
 - 1.2 Fixed the screenshot and some bugs
@@ -51,4 +51,4 @@ Google Fonts licensed under several licenses. See https://www.google.com/fonts/a
 - 1.6 Add your own main and header fonts. Iframe top margin setting. Langmenu removed in some pages. Other bugs fixed.
 - 1.7 Google font selection. Blocks customization. Several minor bugs fixed.
 - 1.8 Notifications bar added to the top
-
+- 1.9 Privacy API added (compatible only with moodle 3.4.2 and higher)
