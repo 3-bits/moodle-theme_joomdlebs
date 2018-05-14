@@ -25,7 +25,7 @@
  *
  * @package    theme
  * @subpackage joomdlebs
- * @copyright  2013-2016 Fernando Acedo 3-bits.com
+ * @copyright  2013-2018 Fernando Acedo 3-bits.com
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
