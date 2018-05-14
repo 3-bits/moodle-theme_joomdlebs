@@ -132,3 +132,6 @@ This will prevent your customized theme from being overwritten by future upgrade
 <p>Google Fonts licensed under several licenses. See <a href="https://www.google.com/fonts/attribution">https://www.google.com/fonts/attribution</a><p/>
 
 </div></div>';
+
+// Privacy.
+$string['privacy:metadata'] = 'Adaptable do not store any individual user data.';
