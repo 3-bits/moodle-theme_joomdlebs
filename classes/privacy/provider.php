@@ -15,11 +15,11 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 namespace theme_joomdlebs\privacy;
- 
-class provider implements 
+
+class provider implements
     // This theme does not store any personal user data.
     \core_privacy\local\metadata\null_provider {
- 
+
     /**
      * Get the language string identifier with the component's language
      * file to explain why this plugin stores no data.
