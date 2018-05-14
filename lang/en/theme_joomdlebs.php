@@ -134,4 +134,4 @@ This will prevent your customized theme from being overwritten by future upgrade
 </div></div>';
 
 // Privacy.
-$string['privacy:metadata'] = 'Adaptable do not store any individual user data.';
+$string['privacy:metadata'] = 'JoomdleBS do not store any individual user data.';
