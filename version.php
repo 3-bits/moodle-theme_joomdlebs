@@ -31,9 +31,9 @@
 
 defined('MOODLE_INTERNAL') || die;
 
-$plugin->version = 2017111300;
-$plugin->release = 'v1.8';
-$plugin->requires = 2013111800;
+$plugin->version = 2018051200;
+$plugin->release = 'v1.9';
+$plugin->requires = 2017111302;
 $plugin->component = 'theme_joomdlebs';
 $plugin->dependencies = array('theme_bootstrapbase' => 2013110500);
 $plugin->maturity = MATURITY_STABLE;
